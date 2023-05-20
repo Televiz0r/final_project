@@ -25,9 +25,8 @@ def start(message):
     item1 = types.KeyboardButton('❓Помощь❓')
     item2 = types.KeyboardButton('ℹИнформацияℹ')
     item3 = types.KeyboardButton('☀Погода☀')
-    item4 = types.KeyboardButton('🕹Игра "Угадай число"🕹')
 
-    markup.add(item1, item2, item3, item4)
+    markup.add(item1, item2, item3)
 
     bot.send_message(message.chat.id, 'Привет, {0.first_name}!'.format(message.from_user), reply_markup = markup)
 
@@ -52,9 +51,8 @@ def bot_nessage(message):
             item1 = types.KeyboardButton('❓Помощь❓')
             item2 = types.KeyboardButton('ℹИнформацияℹ')
             item3 = types.KeyboardButton('☀Погода☀')
-            item4 = types.KeyboardButton('🕹Игра "Угадай число"🕹')
 
-            markup.add(item1, item2, item3, item4)
+            markup.add(item1, item2, item3)
 
             bot.send_message(message.chat.id, "Вы в главном меню!", reply_markup = markup)
 
