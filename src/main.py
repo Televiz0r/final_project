@@ -2,7 +2,6 @@ import telebot
 import requests
 from telebot.types import Message
 from telebot import types
-from random import randint
 
 def read_token() -> str:
     with open("./API_token.txt", "r") as file_in:
